@@ -6,8 +6,6 @@ def start():
 
     do = raw_input("> ")
 
-#rescue sushi from being eaten, note to self
-
     if "talk" in do or "speak" in do or "say" in do:
         password()
     elif "fight" in do or "duel" in do:
