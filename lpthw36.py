@@ -27,7 +27,7 @@ def fight():
     elif "dance" in spell or "do" in spell:
         dead("Your dance brings a storm of alpacas to the scene. You get struck by lightning.")
     else:
-        dead("You really shouldn't have done that.")
+        dead("You really shouldn't have done that. You turn into an alpaca.")
         
 def password():
     print "The wizard asks you for a password. What do you tell him?"
@@ -41,7 +41,7 @@ def password():
         elif pw == "open gate" or pw == "open door" and gate_opened == True:
             castle()
         else:
-            dead("YOU SHALL NOT PASS! The wizard turns you into a newt.")
+            dead("YOU SHALL NOT PASS! The wizard turns you into an alpaca.")
     
 def castle():
     print "You stand in the foyer of a castle."
