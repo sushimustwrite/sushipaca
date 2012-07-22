@@ -85,10 +85,8 @@ def right():
             print "You gonna put a number in or what?"
         elif int(right) % 2 == 0:
             left()
-        elif int(right) % 2 == 1:
-            dead("A ninja sneaks up behind you and cuts you.")
         else:
-            print "You gonna put a number in or what?"
+            dead("A ninja sneaks up behind you and cuts you.")
         
 def dead(why):
     print why, "Your adventure ends here."
