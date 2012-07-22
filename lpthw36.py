@@ -11,7 +11,7 @@ def start():
     elif "fight" in do or "duel" in do:
         fight()
     elif "flee" in do or "run" in do:
-        print dead("An alpaca with an anvil strapped to it falls from the sky and hits you on the head.")
+        dead("An alpaca with an anvil strapped to it falls from the sky and hits you on the head.")
     else:
         start()
 
@@ -35,7 +35,7 @@ def password():
     
     while True:
         pw = raw_input("> ")
-        if pw == "alpaca" and gate_opened == False:
+        if "alpaca" in pw or "sushi" in pw and gate_opened == False:
             print "The wizard steps aside. You can open the gate now."
             gate_opened = True
         elif "open" in pw and gate_opened == True:
@@ -79,10 +79,10 @@ def right():
     print "A teleporter sits in front of you."
     print "Use the numeric keypad to enter your password."
     
-    while True: 
+    while True:
         right = raw_input("> ")
         if right.isdigit() == False:
-            print "You gonna put a number in or what?"
+            print "I don't know what you're talking about. Try again."
         elif int(right) % 2 == 0:
             left()
         else:
