@@ -38,7 +38,7 @@ def password():
         if pw == "alpaca" and gate_opened == False:
             print "The wizard steps aside. You can open the gate now."
             gate_opened = True
-        elif pw == "open gate" or pw == "open door" and gate_opened == True:
+        elif "open" in pw and gate_opened == True:
             castle()
         else:
             dead("YOU SHALL NOT PASS! The wizard turns you into an alpaca.")
